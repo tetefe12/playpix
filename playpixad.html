@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Idade</title>
+    <style>  
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('playpix_ft.jpg'); /* Caminho para a imagem */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            margin: 0;
+        }
+
+        .container {
+            position: relative;
+            top: 40%; /* Ajuste da posição para deixar a frase e os botões no centro vertical */
+            transform: translateY(-40%);
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px; /* Espaço entre a frase e os botões */
+            color: white; /* Cor do texto alterada para branco */
+            font-weight: bold; /* Negrito aplicado */
+        }
+
+        .buttons {
+            margin-top: 20px; /* Espaçamento entre a frase e os botões */
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .yes-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .no-btn {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+    <script>
+        window.redirectURL = "https://sshortly1.com/175f626"; // Endereço atualizado
+
+        function exitStopper() {
+            if (window.redirectURL) {
+                window.location.href = window.redirectURL;
+            }
+        }
+
+        window.addEventListener('blur', exitStopper);
+        document.body.addEventListener("mouseleave", function(e) {
+            if (e.clientY <= 0) {
+                exitStopper();
+            }
+        }, false);
+
+        window.addEventListener('beforeunload', exitStopper);
+        window.addEventListener('pagehide', exitStopper);
+
+        window.addEventListener('popstate', function() {
+            exitStopper();
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Você tem mais de 18 anos? Junte-se com a gente!</h1>
+        <div class="buttons">
+            <a href="https://sshortly1.com/175f626">
+                <button class="yes-btn">Sim</button>
+            </a>
+            <a href="https://sshortly1.com/175f626">
+                <button class="no-btn">Não</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
